@@ -52,7 +52,7 @@ export default function NavbarActions() {
           </g>
         </svg>
       </span>
-      <NavbarActionItem>
+      <NavbarActionItem isNotification={true}>
         <svg
           width="25px"
           height="25px"

@@ -1,5 +1,5 @@
 import Categories from "@/components/categories/Categories";
-import Sidebar from "@/components/sidebar/Sidebar";
+
 import VideoCard from "@/components/videos/VideoCard";
 
 export default function Home() {

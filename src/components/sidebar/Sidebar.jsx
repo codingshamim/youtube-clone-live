@@ -7,10 +7,10 @@ import { useParams, usePathname } from "next/navigation";
 export default function Sidebar() {
   const pathName = usePathname();
 
-  const { isHamburger, setHamburger } = useHamburger();
+  const { isHamburger } = useHamburger();
   return (
     <aside
-      className={`hidden md:block md:w-[20%] ${
+      className={`hidden   md:w-[20%] ${
         isHamburger || "md:w-[4%]"
       } md:h-[91vh]`}
     >

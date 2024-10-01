@@ -1,3 +1,5 @@
+import SubscribeButton from "./SubscribeButton";
+
 export default function ProfileInfo() {
   return (
     <div className="profile-info w-full left-0 flex-col md:flex-row flex md:mt-4 md:ml-4 md:items-center">
@@ -20,9 +22,7 @@ export default function ProfileInfo() {
             It's all about teaching Web Development skills and techniques in an
             efficient manner
           </p>
-          <button className="py-2 px-4 rounded-sm border bg-white text-black mt-4">
-            Subscribe
-          </button>
+          <SubscribeButton />
         </div>
       </div>
     </div>
