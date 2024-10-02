@@ -2,15 +2,12 @@
 
 import useHamburger from "@/hooks/useHamburger";
 import Link from "next/link";
-import { useParams, usePathname } from "next/navigation";
 
-export default function Sidebar() {
-  const pathName = usePathname();
-
+export default function Sidebar({ isActive }) {
   const { isHamburger } = useHamburger();
   return (
     <aside
-      className={`hidden   md:w-[20%] ${
+      className={`hidden ${isActive ? "md:block" : "md:hidden"}  md:w-[20%] ${
         isHamburger || "md:w-[4%]"
       } md:h-[91vh]`}
     >

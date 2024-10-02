@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function VideoCard() {
   return (
     <article className="article p-2 hover:bg-secondaryBg cursor-pointer rounded-sm transition-all duration-150 aritcle-container">
-      <Link href="/view">
+      <Link href="/watch?v=rksdilhs">
         <div className="thumbnail overflow-hidden transition-all duration-150">
           <img
             className="w-full h-[150px] md:h-[200px] object-cover transition-all duration-150"

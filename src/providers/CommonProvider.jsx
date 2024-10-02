@@ -22,22 +22,12 @@ export default function CommonProvider({ children }) {
         });
       }
     };
-    const handleClick = () => {
-      setCommonState({
-        ...commonState,
-        createOption: false,
-        profileOption: false,
-        notificationOption: false,
-      });
-    };
 
-    // Add event listener to the document
-    document.addEventListener("click", handleClick);
     // Add event listener for keydown
     document.addEventListener("keydown", handleEsc);
 
     return () => {
-      document.removeEventListener("click", handleClick);
+      document.removeEventListener("keydown", handleEsc);
     };
   }, [commonState]);
 

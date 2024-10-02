@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           <HamburgerProvider>
             <Navbar />
             <main className="custom-container flex gap-2 w-full">
-              <Sidebar />
+              <Sidebar isActive={true} />
               <MainWrapper>{children}</MainWrapper>
             </main>
           </HamburgerProvider>

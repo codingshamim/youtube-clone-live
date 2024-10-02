@@ -1,8 +1,12 @@
 import Navbar from "@/components/navbar/Navbar";
-import CommonProvider from "@/providers/CommonProvider";
-import HamburgerProvider from "@/providers/HamburgerProvider";
-import { Montserrat } from "next/font/google";
 import "../globals.css";
+import { Montserrat } from "next/font/google";
+
+import HamburgerProvider from "@/providers/HamburgerProvider";
+import Sidebar from "@/components/sidebar/Sidebar";
+import MainWrapper from "@/components/ui/MainWrapper";
+import CommonProvider from "@/providers/CommonProvider";
+
 const mono = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -21,7 +25,8 @@ export default function layout({ children }) {
           <HamburgerProvider>
             <Navbar />
             <main className="custom-container flex gap-2 w-full">
-              {children}
+              <Sidebar isActive={false} />
+              <MainWrapper>{children}</MainWrapper>
             </main>
           </HamburgerProvider>
         </CommonProvider>
