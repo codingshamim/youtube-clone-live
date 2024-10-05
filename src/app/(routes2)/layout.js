@@ -24,7 +24,7 @@ export default function layout({ children }) {
         <CommonProvider>
           <HamburgerProvider>
             <Navbar />
-            <main className="custom-container flex gap-2 w-full">
+            <main className="custom-container  flex gap-2 w-full">
               <Sidebar isActive={false} />
               <MainWrapper>{children}</MainWrapper>
             </main>
