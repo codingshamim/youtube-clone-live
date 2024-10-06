@@ -1,9 +1,4 @@
-"use client";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-
 export default function AccountModal({ children }) {
-  const router = useRouter();
   return (
     <div className="top-14 account-modal rounded-md fixed z-50 w-full md:w-[400px] md:right-6 bg-secondaryBgWhite dark:bg-secondaryBg">
       <div className="account-info flex items-center gap-3 p-2">
@@ -96,10 +91,7 @@ export default function AccountModal({ children }) {
               />
             </svg>
           </li>
-          <li
-            onClick={() => router.push("/dashboard")}
-            className="hover:bg-secondaryBgWhite hover:dark:bg-black flex gap-2 items-center px-4 py-2 cursor-pointer"
-          >
+          <li className="hover:bg-secondaryBgWhite hover:dark:bg-black flex gap-2 items-center px-4 py-2 cursor-pointer">
             <svg
               className="fill-black dark:fill-white"
               width="20px"
